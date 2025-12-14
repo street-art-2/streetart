@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STREET ARTS - Warrior NFTs</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              warrior: {
+                50: '#fefce8',
+                100: '#fef9c3',
+                200: '#fef08a',
+                300: '#fde047',
+                400: '#facc15',
+                500: '#eab308',
+                600: '#ca8a04',
+                700: '#a16207',
+                800: '#854d0e',
+                900: '#713f12',
+              },
+              street: {
+                500: '#1a1a2e',
+                600: '#16213e',
+                700: '#0f3460',
+                800: '#0a192f',
+                900: '#050a16',
+              }
+            }
+          }
+        }
+      }
+  </script>
+</head>
+
+<body class="bg-street-900 text-gray-100 font-sans antialiased">
+  <!-- Navbar Component -->
+  <custom-navbar></custom-navbar>
+
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-black/50 z-10"></div>
+    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+      <source
+        src="https://assets.mixkit.co/videos/preview/mixkit-urban-artist-painting-a-graffiti-on-a-wall-41846-large.mp4"
+        type="video/mp4">
+    </video>
+    <div class="container relative z-20 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-warrior-400">
+          STREET ARTS
+        </h1>
+        <p class="text-xl md:text-2xl mb-10 leading-relaxed max-w-3xl mx-auto">
+          Street Art began as a raw, colourful explosion of emotion — a digital graffiti uprising minted on Cardano.
+          Every piece was untamed energy: loud colours, glitch chaos, rebellious strokes, and pure instinct splashed
+          across the blockchain.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="#explore"
+            class="px-8 py-3 bg-warrior-500 hover:bg-warrior-600 text-white font-medium rounded-full transition-all duration-300 transform hover:scale-105">
+            Explore the Legion
+          </a>
+          <a href="https://www.jpg.store/collection/streetartv2?tab=minting"
+            class="px-8 py-3 border-2 border-warrior-500 hover:bg-warrior-500/10 text-warrior-400 font-medium rounded-full transition-all duration-300 transform hover:scale-105">
+            On JPGSTORE
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-street-800">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">THE HIDDEN ORDER</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          They move in silence.
+          Marked by time. Painted by rebellion.
+
+          Ancient soldiers bound by an unseen code,
+          reborn through colour, chaos, and discipline.
+
+          No banners. No noise.
+          Only symbols, scars, and loyalty to the Order.
+
+          This is not the past.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <img src="https://i.postimg.cc/902Fj1kn/10.png" alt="Ancient Warriors" class="rounded-xl shadow-2xl">
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-warrior-400">Not Ordinary Soldiers</h3>
+          <p class="text-gray-300 mb-6">
+            These were spirit-forged protectors, each carrying their culture, battles, and markings with pride. When the
+            world forgot them, they waited—silent, watching—until the colours of Street Art V1 cracked open a doorway.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <span class="px-4 py-2 bg-warrior-800 text-warrior-400 rounded-full">Spirit-Forged</span>
+            <span class="px-4 py-2 bg-warrior-800 text-warrior-400 rounded-full">Ancient Guardians</span>
+            <span class="px-4 py-2 bg-warrior-800 text-warrior-400 rounded-full">Modern Rebirth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="story" class="py-20 bg-street-900">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">THE REAWAKENING</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          The rebellion woke them. The noise, the glitch, the raw electricity of V1 travelled across unseen realms.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="bg-street-800 rounded-xl p-8 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-300">
+          <div class="text-warrior-400 mb-4">
+            <i data-feather="shield" class="w-12 h-12 stroke-current"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Ancient Protectors</h3>
+          <p class="text-gray-300">
+            Guardians carved from history, myth, and ancestral fire. Not ordinary soldiers but spirit-forged protectors.
+          </p>
+        </div>
+
+        <div
+          class="bg-street-800 rounded-xl p-8 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-300">
+          <div class="text-warrior-400 mb-4">
+            <i data-feather="eye" class="w-12 h-12 stroke-current"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">The Awakening</h3>
+          <p class="text-gray-300">
+            When the world forgot them, they waited. Silent. Watching. Until the colours of Street Art cracked open a
+            doorway.
+          </p>
+        </div>
+
+        <div
+          class="bg-street-800 rounded-xl p-8 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-300">
+          <div class="text-warrior-400 mb-4">
+            <i data-feather="zap" class="w-12 h-12 stroke-current"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3"> Rebirth</h3>
+          <p class="text-gray-300">
+            Now they step into the new age draped in modern color, graffiti chaos, and neon war paint.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evolution Section -->
+  <section id="evolution" class="py-20 bg-street-800">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">FROM V1 TO V2</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          V1 was the spark.
+          Raw. Loud. Unfiltered.
+
+          A street-born rebellion painted in chaos and colour.
+
+          V2 is what rose from the smoke.
+          Sharper. Deeper. Intentional.
+
+          The noise became language.
+          The colour became war paint.
+          The rebellion became legacy.
+
+          Same fire.
+          New form.
+
+          If you want a slightly more poetic, more aggressive, or more emotional cut, I can tune it.
+        </p>
+      </div>
+
+      <div class="relative">
+        <div class="hidden md:block absolute left-1/2 h-full w-1 bg-warrior-500/50 transform -translate-x-1/2"></div>
+
+        <div class="space-y-12 md:space-y-0">
+          <div class="relative md:flex justify-between items-center">
+            <div class="md:w-5/12 md:pr-10 md:text-right mb-6 md:mb-0">
+              <h3 class="text-xl font-bold text-warrior-400">V1 Origins</h3>
+              <p class="text-warrior-500"></p>
+            </div>
+            <div
+              class="hidden md:block w-8 h-8 rounded-full bg-warrior-500 absolute left-1/2 transform -translate-x-1/2">
+            </div>
+            <div class="md:w-5/12">
+              <p class="text-gray-300">
+                Born out of love for street Arts with intentions, colours and emotions.
+              </p>
+            </div>
+          </div>
+
+          <div class="relative md:flex justify-between items-center">
+            <div class="md:w-5/12 md:pr-10 md:text-right order-last mb-6 md:mb-0">
+              <p class="text-gray-300">
+                V1 was a limited edition, collected with intent and considered love by collectors across Cardano.
+              </p>
+            </div>
+            <div
+              class="hidden md:block w-8 h-8 rounded-full bg-warrior-500 absolute left-1/2 transform -translate-x-1/2">
+            </div>
+            <div class="md:w-5/12 order-first">
+              <h3 class="text-xl font-bold text-warrior-400">Digital Emergence</h3>
+              <p class="text-warrior-500"></p>
+            </div>
+          </div>
+
+          <div class="relative md:flex justify-between items-center">
+            <div class="md:w-5/12 md:pr-10 md:text-right mb-6 md:mb-0">
+              <h3 class="text-xl font-bold text-warrior-400">V2 Awakening</h3>
+              <p class="text-warrior-500"></p>
+            </div>
+            <div
+              class="hidden md:block w-8 h-8 rounded-full bg-warrior-500 absolute left-1/2 transform -translate-x-1/2">
+            </div>
+            <div class="md:w-5/12">
+              <p class="text-gray-300">
+                The warriors fully manifested in the digital realm as Street Arts. Each piece this collection comes with
+                its and attributes with complete backstories and attributes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heart of Street Art Section -->
+  <section id="heart" class="py-20 bg-street-900">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">THE HEART OF STREET ART</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          V2 is built on scarcity and soul.
+          A fixed 600 total supply.
+          Every piece is a true 1/1, no repeats, no shortcuts.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="order-2 md:order-1">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-street-800 p-6 rounded-lg">
+              <div class="text-warrior-400 mb-3">
+                <i data-feather="shield" class="w-8 h-8 stroke-current"></i>
+              </div>
+              <h4 class="font-bold mb-2">Protection</h4>
+              <p class="text-gray-300 text-sm">Each warrior carries protective energy from their ancient origins.</p>
+            </div>
+            <div class="bg-street-800 p-6 rounded-lg">
+              <div class="text-warrior-400 mb-3">
+                <i data-feather="droplet" class="w-8 h-8 stroke-current"></i>
+              </div>
+              <h4 class="font-bold mb-2">Expression</h4>
+              <p class="text-gray-300 text-sm">Vibrant colors represent individual warrior personalities.</p>
+            </div>
+            <div class="bg-street-800 p-6 rounded-lg">
+              <div class="text-warrior-400 mb-3">
+                <i data-feather="zap" class="w-8 h-8 stroke-current"></i>
+              </div>
+              <h4 class="font-bold mb-2">Energy</h4>
+              <p class="text-gray-300 text-sm">Weird, Spiritual highlights symbolize their awakened power.</p>
+            </div>
+            <div class="bg-street-800 p-6 rounded-lg">
+              <div class="text-warrior-400 mb-3">
+                <i data-feather="compass" class="w-8 h-8 stroke-current"></i>
+              </div>
+              <h4 class="font-bold mb-2">Guidance</h4>
+              <p class="text-gray-300 text-sm">Warriors serve as spiritual guides in the digital age.</p>
+            </div>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <img src="https://i.postimg.cc/kGCXdwHZ/9.png" alt="Street Art Warrior" class="rounded-xl shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="py-20 bg-street-800">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">WARRIOR BENEFITS</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          Owning a Street Art V2 Warrior grants you access to exclusive benefits and experiences.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="bg-street-700 rounded-xl p-8 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-300 transform hover:-translate-y-2">
+          <div class="text-warrior-400 mb-4 flex justify-center">
+            <i data-feather="award" class="w-12 h-12 stroke-current"></i>
+          </div>
+          <h3 class="text-xl font-bold text-center mb-3">Exclusive Drops</h3>
+          <p class="text-gray-300 text-center">
+            Access to future Stret Art token, collections and limited edition items.
+          </p>
+        </div>
+
+        <div
+          class="bg-street-700 rounded-xl p-8 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-300 transform hover:-translate-y-2">
+          <div class="text-warrior-400 mb-4 flex justify-center">
+            <i data-feather="users" class="w-12 h-12 stroke-current"></i>
+          </div>
+          <h3 class="text-xl font-bold text-center mb-3">Community</h3>
+          <p class="text-gray-300 text-center">
+            Access to exclusive community of warrior collectors.
+          </p>
+        </div>
+
+        <div
+          class="bg-street-700 rounded-xl p-8 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-300 transform hover:-translate-y-2">
+          <div class="text-warrior-400 mb-4 flex justify-center">
+            <i data-feather="map" class="w-12 h-12 stroke-current"></i>
+          </div>
+          <h3 class="text-xl font-bold text-center mb-3">Discord Game</h3>
+          <p class="text-gray-300 text-center">
+            Access to Warrior Fights P2E game.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Gallery Section -->
+  <section id="explore" class="py-20">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">THE LEGION</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          Each warrior represents a lost kingdom or tribe, marked by ceremony, struggle, and legacy.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Warrior 1 -->
+        <div
+          class="group relative overflow-hidden rounded-xl bg-street-700 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-500">
+          <img src="https://i.postimg.cc/FzvsQG68/11.png" alt="Warrior 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">NobleShaman</h3>
+            <p class="text-gray-300 mb-4">Dedicated, Creator, with a bright outlook.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-warrior-400 font-medium"></span>
+              <a href="#" class="text-white hover:text-warrior-400 transition-colors">
+                <i data-feather="arrow-right-circle" class="w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Warrior 2 -->
+        <div
+          class="group relative overflow-hidden rounded-xl bg-street-700 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-500">
+          <img src="https://i.postimg.cc/902Fj1kn/10.png" alt="Warrior 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">ObsidianComm</h3>
+            <p class="text-gray-300 mb-4">Innovative dreamer with bold ideas</p>
+            <div class="flex justify-between items-center">
+              <span class="text-warrior-400 font-medium"></span>
+              <a href="#" class="text-white hover:text-warrior-400 transition-colors">
+                <i data-feather="arrow-right-circle" class="w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Warrior 3 -->
+        <div
+          class="group relative overflow-hidden rounded-xl bg-street-700 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-500">
+          <img src="https://i.postimg.cc/8kdzbQJk/12.png" alt="Warrior 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">SolarRider</h3>
+            <p class="text-gray-300 mb-4">Courageous problem solver seeking new horizons</p>
+            <div class="flex justify-between items-center">
+              <span class="text-warrior-400 font-medium"></span>
+              <a href="#" class="text-white hover:text-warrior-400 transition-colors">
+                <i data-feather="arrow-right-circle" class="w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="#lore"
+          class="inline-flex items-center px-6 py-3 border-2 border-warrior-500 text-warrior-400 font-medium rounded-full hover:bg-warrior-500/10 transition-all duration-300">
+          Explore Warrior Lore
+          <i data-feather="chevron-right" class="w-5 h-5 ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lore Section -->
+  <section id="lore" class="py-20 bg-street-900">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">WARRIOR LORE</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          Backstory and mythology of the Street Art Warriors.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <div class="bg-street-800 p-8 rounded-xl mb-8">
+            <h3 class="text-2xl font-bold mb-4 text-warrior-400"> Origins</h3>
+            <p class="text-gray-300 mb-4">
+            <p>Before there was graffiti, there were warriors.</p>
+
+
+            <p>Long before the streets were painted with colours and chaos, there existed a hidden order of
+              warriors—guardians carved from history, myth, and ancestral fire.</p>
+            <br>
+
+            <p>They were not ordinary soldiers. They were spirit-forged protectors, each carrying their culture, their
+              battles, and their markings with pride.</p>
+            <br>
+
+            <p>When the world forgot them… they waited.</p>
+
+
+            <p>Silent. Watching.</p>
+
+
+            <p>Until the colours of Street Art V1 cracked open a doorway.</p>
+
+
+            <p>The rebellion woke them.</p>
+
+            </p>
+            <img src="https://i.postimg.cc/0zg10yRH/17.png" alt="Cave Paintings" class="rounded-lg w-full h-48 object-cover">
+          </div>
+          <div class="bg-street-800 p-8 rounded-xl">
+            <h3 class="text-2xl font-bold mb-4 text-warrior-400">The Purpose</h3>
+            <p class="text-gray-300 mb-4">
+              Their purpose is simple:
+
+              To reclaim forgotten stories
+              and march them boldly across the blockchain.
+
+              Collected, honoured, and remembered,
+              each soldier becomes a guardian for the holder who claims them.
+            </p>
+            <img src="http://static.photos/abstract/640x360/5" alt="Tribal Warriors" class="rounded-lg w-full h-48 object-cover">
+          </div>
+        </div>
+        <div>
+          <div class="bg-street-800 p-8 rounded-xl mb-8">
+            <h3 class="text-2xl font-bold mb-4 text-warrior-400">The Art</h3>
+            <p class="text-gray-300 mb-4">
+              The paint splashes, drips, and distortions of Street Art become their new armour.
+              Their ancient masks absorb the rebellious energy of the street.
+            </p>
+            <img src="https://i.postimg.cc/8CqzZTmJ/6.png" alt="Modern Warriors" class="rounded-lg w-full h-48 object-cover">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section id="mission" class="py-20 bg-street-800">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">THE MISSION</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="bg-street-700 rounded-xl p-8 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-300">
+          <div class="text-warrior-400 mb-4">
+            <i data-feather="shield" class="w-12 h-12 stroke-current"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Preserve Culture</h3>
+          <p class="text-gray-300">
+            Document and celebrate warrior traditions from around the world through Street artistic expression.
+          </p>
+        </div>
+
+        <div
+          class="bg-street-700 rounded-xl p-8 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-300">
+          <div class="text-warrior-400 mb-4">
+            <i data-feather="heart" class="w-12 h-12 stroke-current"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Gaming</h3>
+          <p class="text-gray-300">
+            Warrrior P2E game soon.
+          </p>
+        </div>
+
+        <div
+          class="bg-street-700 rounded-xl p-8 hover:shadow-lg hover:shadow-warrior-500/20 transition-all duration-300">
+          <div class="text-warrior-400 mb-4">
+            <i data-feather="globe" class="w-12 h-12 stroke-current"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Build Community</h3>
+          <p class="text-gray-300">
+            Create an inclusive Cardano community by art, history, fun and shared creative vision.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="py-20 bg-street-900">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">JOIN THE TRIBE</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+          Become part of the Street Art movement.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <img src="https://i.postimg.cc/7Cn468cq/5.png" alt="Street Art Community" class="rounded-xl shadow-2xl">
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold mb-4 text-warrior-400">Connect With Warriors Worldwide</h3>
+          <p class="text-gray-300 mb-6">
+            Our community spans artists, collectors, and cultural enthusiasts. Join our Discord to
+            participate in:
+          </p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start">
+              <i data-feather="check-circle" class="text-warrior-400 mr-2 mt-1"></i>
+              <span class="text-gray-300">Exclusive artist collaborations</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check-circle" class="text-warrior-400 mr-2 mt-1"></i>
+              <span class="text-gray-300">Weekly warrior lore deep dives</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check-circle" class="text-warrior-400 mr-2 mt-1"></i>
+              <span class="text-gray-300">IRL meetups and gallery events</span>
+            </li>
+            <li class="flex items-start">
+              <i data-feather="check-circle" class="text-warrior-400 mr-2 mt-1"></i>
+              <span class="text-gray-300">Early access to new collections</span>
+            </li>
+          </ul>
+          <a href="#"
+            class="px-8 py-3 bg-warrior-500 hover:bg-warrior-600 text-white font-medium rounded-full transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+            <i data-feather="discord" class="w-5 h-5 mr-2"></i>
+            Join Discord
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="py-20 bg-street-800">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6 text-warrior-400">THE MARCH FORWARD</h2>
+        <div class="w-24 h-1 bg-warrior-500 mx-auto mb-8"></div>
+        <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+
+        </p>
+      </div>
+
+      <div class="relative">
+        <!-- Timeline line -->
+        <div class="hidden md:block absolute left-1/2 h-full w-1 bg-warrior-500/50 transform -translate-x-1/2"></div>
+
+        <!-- Timeline items -->
+        <div class="space-y-12 md:space-y-0">
+          <!-- Phase 1 -->
+          <div class="relative md:flex justify-between items-center">
+            <div class="md:w-5/12 md:pr-10 md:text-right mb-6 md:mb-0">
+              <h3 class="text-xl font-bold text-warrior-400">Phase 1: Awakening</h3>
+              <p class="text-gray-300">1</p>
+            </div>
+            <div
+              class="hidden md:block w-8 h-8 rounded-full bg-warrior-500 absolute left-1/2 transform -translate-x-1/2">
+            </div>
+            <div class="md:w-5/12">
+              <p class="text-gray-300">
+                The first 600 warriors awaken from their slumber, responding to the call of street art's energy.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="relative md:flex justify-between items-center">
+            <div class="md:w-5/12 md:pr-10 md:text-right order-last mb-6 md:mb-0">
+              <p class="text-gray-300">
+                Your clan manifests as a Discord role—the more Street Art V2 you own, the higher your clan rank.
+              </p>
+            </div>
+            <div
+              class="hidden md:block w-8 h-8 rounded-full bg-warrior-500 absolute left-1/2 transform -translate-x-1/2">
+            </div>
+            <div class="md:w-5/12 order-first">
+              <h3 class="text-xl font-bold text-warrior-400">Phase 2: Tribal Formation</h3>
+              <p class="text-gray-300">2</p>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="relative md:flex justify-between items-center">
+            <div class="md:w-5/12 md:pr-10 md:text-right mb-6 md:mb-0">
+              <h3 class="text-xl font-bold text-warrior-400">Phase 3: War Begins</h3>
+              <p class="text-gray-300">3</p>
+            </div>
+            <div
+              class="hidden md:block w-8 h-8 rounded-full bg-warrior-500 absolute left-1/2 transform -translate-x-1/2">
+            </div>
+            <div class="md:w-5/12">
+              <p class="text-gray-300">
+                Warrior discord game launch. with your NFT, you will be able to play and earn instant rewards.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="relative md:flex justify-between items-center">
+            <div class="md:w-5/12 md:pr-10 md:text-right order-last mb-6 md:mb-0">
+              <p class="text-gray-300">
+                Physical warrior merchandise and collector editions released for holders.
+              </p>
+            </div>
+            <div
+              class="hidden md:block w-8 h-8 rounded-full bg-warrior-500 absolute left-1/2 transform -translate-x-1/2">
+            </div>
+            <div class="md:w-5/12 order-first">
+              <h3 class="text-xl font-bold text-warrior-400">Phase 4: Physical Realm</h3>
+              <p class="text-gray-300">4 </p>
+            </div>
+          </div>
+
+          <!-- Phase 5 -->
+          <div class="relative md:flex justify-between items-center">
+            <div class="md:w-5/12 md:pr-10 md:text-right mb-6 md:mb-0">
+              <h3 class="text-xl font-bold text-warrior-400">Phase 5: Warrior World</h3>
+              <p class="text-gray-300">5</p>
+            </div>
+            <div
+              class="hidden md:block w-8 h-8 rounded-full bg-warrior-500 absolute left-1/2 transform -translate-x-1/2">
+            </div>
+            <div class="md:w-5/12">
+              <p class="text-gray-300">
+                Interactive metaverse experience where warriors can battle, trade, and showcase their collections.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="py-20 bg-gradient-to-br from-warrior-800 to-street-700">
+    <div class="container px-6 mx-auto">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">BECOME A WARRIOR</h2>
+        <p class="text-lg md:text-xl mb-10 leading-relaxed max-w-3xl mx-auto">
+          Claim your Street Art V2 Warrior and join the rebellion today.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://www.jpg.store/collection/streetartv2?tab=minting"
+            class="px-8 py-3 bg-warrior-500 hover:bg-warrior-600 text-white font-medium rounded-full transition-all duration-300 transform hover:scale-105 flex items-center">
+            <i data-feather="shopping-bag" class="w-5 h-5 mr-2"></i>
+            Mint Your Warrior
+          </a>
+          <a href="#community"
+            class="px-8 py-3 border-2 border-white hover:bg-white/10 text-white font-medium rounded-full transition-all duration-300 transform hover:scale-105 flex items-center">
+            <i data-feather="users" class="w-5 h-5 mr-2"></i>
+            Join Community
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Component -->
+  <custom-footer></custom-footer>
+
+  <!-- Component Scripts -->
+  <script src="components/navbar.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="script.js"></script>
+  <script>
+    feather.replace();
+  </script>
+
+</body>
+
+</html>
